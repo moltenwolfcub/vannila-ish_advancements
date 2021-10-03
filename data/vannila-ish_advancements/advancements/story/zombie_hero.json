@@ -1,0 +1,28 @@
+{
+    "parent": "minecraft:story/cure_zombie_villager",
+    "display": {
+        "icon": {
+        "item": "minecraft:enchanted_golden_apple"
+        },
+            "title": {
+                "text": "Zombie Hero"
+        },
+            "description": {
+                "text": "Cure 10 zombie villagers"
+      },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "cured_zombie": {
+            "trigger": "impossible"
+        }
+    },
+    "requirements": [
+        [
+            "cured_zombie"
+        ]
+    ]
+  }
