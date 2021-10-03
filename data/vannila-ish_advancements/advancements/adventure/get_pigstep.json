@@ -1,0 +1,38 @@
+{
+    "parent": "vannila-ish_advancements:adventure/get_disc",
+    "display": {
+        "icon": {
+            "item": "minecraft:music_disc_pigstep"
+        },
+        "title": {
+            "text": "Beats of the nether"
+        },
+        "description": {
+            "text": "Obtain the pigstep disc"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "rewards": {},
+    "criteria": {
+        "got_disc": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "music_disc_pigstep"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "got_disc"
+        ]
+    ]
+}

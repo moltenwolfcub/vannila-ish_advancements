@@ -1,0 +1,38 @@
+{
+    "parent": "minecraft:adventure/root",
+    "display": {
+        "icon": {
+            "item": "minecraft:music_disc_cat"
+        },
+        "title": {
+            "text": "Time for some tunes!"
+        },
+        "description": {
+            "text": "Obtain a music disc from a creeper"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "rewards": {
+        "experience": 10
+    },
+    "criteria": {
+        "got_disc": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "tag": "creeper_drop_music_discs"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "got_disc"
+        ]
+    ]
+}
