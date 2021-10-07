@@ -9,5 +9,8 @@
     [
       "cured_zombie"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "vannila-ish_advancements:zombie_hero_counter"
+  }
 }
